@@ -1,0 +1,62 @@
+Array methods in JavaScript
+-----------------------------------------------------------------------------------------
+Adding and Removing Elements
+
+- push(...items):
+    Adds one or more elements to the end of an array and returns the new length of the array.
+
+-  pop():
+    Removes the last element from an array and returns that element.
+
+- shift():
+    Removes the first element from an array and returns that element.
+
+- unshift(...items):
+    Adds one or more elements to the beginning of an array and returns the new length of the array.
+
+-  splice(start, deleteCount, ...items):
+    Changes the contents of an array by removing or replacing existing elements and/or adding new elements.
+
+----------------------------------------------------------------------------------------------------------------
+Copying and Slicing
+- slice(start, end):
+    Returns a shallow copy of a portion of an array into a
+    new array selected from start to end (end not included).
+
+Iterating
+- `forEach(callback(currentValue, index, array), thisArg)`:
+ Executes a provided function once for each array element.
+
+- **`map(callback(currentValue, index, array), thisArg)`**: Creates a new array with the results of calling a provided function on every element in the array.
+- **`filter(callback(element, index, array), thisArg)`**: Creates a new array with all elements that pass the test implemented by the provided function.
+- **`find(callback(element, index, array), thisArg)`**: Returns the first element in the array that satisfies the provided testing function.
+- **`findIndex(callback(element, index, array), thisArg)`**: Returns the index of the first element in the array that satisfies the provided testing function.
+- **`some(callback(element, index, array), thisArg)`**: Tests whether at least one element in the array passes the test implemented by the provided function.
+- **`every(callback(element, index, array), thisArg)`**: Tests whether all elements in the array pass the test implemented by the provided function.
+- **`reduce(callback(accumulator, currentValue, currentIndex, array), initialValue)`**: Applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+- **`reduceRight(callback(accumulator, currentValue, currentIndex, array), initialValue)`**: Applies a function against an accumulator and each element in the array (from right to left) to reduce it to a single value.
+- **`flat(depth)`**: Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+- **`flatMap(callback(currentValue, index, array), thisArg)`**: First maps each element using a mapping function, then flattens the result into a new array.
+
+### Searching
+- **`indexOf(searchElement, fromIndex)`**: Returns the first index at which a given element can be found in the array, or -1 if it is not present.
+- **`lastIndexOf(searchElement, fromIndex)`**: Returns the last index at which a given element can be found in the array, or -1 if it is not present.
+- **`includes(searchElement, fromIndex)`**: Determines whether an array contains a certain element, returning true or false as appropriate.
+- **`findLast(callback(element, index, array), thisArg)`**: Returns the last element in the array that satisfies the provided testing function.
+- **`findLastIndex(callback(element, index, array), thisArg)`**: Returns the index of the last element that satisfies the provided testing function.
+
+### Sorting and Reversing
+- **`sort([compareFunction])`**: Sorts the elements of an array in place and returns the sorted array.
+- **`reverse()`**: Reverses the elements of an array in place.
+
+### Concatenating and Joining
+- **`concat(...items)`**: Used to merge two or more arrays into a new array.
+- **`join([separator])`**: Joins all elements of an array into a string, separated by the specified separator.
+
+### Other
+- **`toString()`**: Returns a string representation of the array.
+- **`toLocaleString()`**: Returns a localized string representation of the array.
+- **`copyWithin(target, start, end)`**: Copies a part of the array to another location in the same array without modifying its size.
+- **`fill(value, start, end)`**: Fills all the elements of an array from a start index to an end index with a static value.
+- **`from(arrayLike, mapFn, thisArg)`**: Creates a new array instance from an array-like or iterable object.
+- **`isArray(value)`**: Determines whether the passed value is an Array.
