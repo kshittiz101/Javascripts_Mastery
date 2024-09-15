@@ -5,5 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- in js Event handlers can be done with 3 different ways  -->
+    <!-- 1. inline Event handlers -->
+
+    <button onclick="alert('hello world')">Click Me</button>
+    <!-- 2. Event properties -->
+    <button id="btnOne">Click 2</button>
+    <!-- 3. addEventListener() method -->
+    <!-- this is recommeded way to handle event listener in js  -->
+    <button id="btnTwo">Click 3</button>
+
+    <script>
+      // using event properties
+      const btnOne = document.querySelector("#btnOne");
+      btnOne.onclick = function () {
+        alert("Hello From Click 2");
+      };
+
+      //   using addEventListener() method
+      const btnTwo = document.querySelector("#btnTwo");
+      btnTwo.addEventListener("click", () => {
+        alert("Click 3 btn is clicked ");
+      });
+    </script>
+  </body>
 </html>

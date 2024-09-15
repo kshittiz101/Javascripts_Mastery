@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator-container">
+      <div class="heading">
+        <h2>Tip Calculator</h2>
+      </div>
+      <div class="calculation_div">
+        <!-- amount section -->
+        <label for="amount">Enter your amount</label>
+        <input type="number" name="amount" id="amount" />
+        <!-- tips cal section -->
+        <div class="service_cal">
+          <label for="service">Select your Tips based on your experience</label>
+          <br />
+          <select name="" id="service">
+            <option disabled selected value="0">Select an option</option>
+            <option value="0.30">30&#37; &#45; Amazing</option>
+            <option value="0.25">25&#37; &#45; Good</option>
+            <option value="0.20">20&#37; &#45; Satisfactory</option>
+            <option value="0.15">15&#37; &#45; Bad</option>
+            <option value="0.10">10&#37; &#45; Disgusting</option>
+          </select>
+        </div>
+
+        <!-- number of people section -->
+        <div class="person">
+          <label for="person">Enter how many people divide tips:</label>
+          <br />
+          <input type="number" name="no-of-person" id="person" />
+        </div>
+
+        <button id="calculate-btn">Calculate</button>
+        <!-- result div  -->
+        <div id="result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
