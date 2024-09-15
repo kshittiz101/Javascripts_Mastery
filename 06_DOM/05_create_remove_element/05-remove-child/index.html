@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove Child</title>
+    <style>
+      .parent {
+        display: flex;
+        width: 100%;
+        height: 100%;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+      .box1 {
+        background-color: red;
+      }
+      .box2 {
+        background-color: green;
+      }
+      .box3 {
+        background-color: yellow;
+      }
+      .box4 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Remove Child</h2>
+    <div class="parent">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+
+    <script>
+      // remove child from parent
+      const parent = document.querySelector(".parent");
+      const child = document.querySelectorAll(".box");
+
+      //   removeChild(childname)
+      parent.removeChild(child[1]);
+    </script>
+  </body>
+</html>
