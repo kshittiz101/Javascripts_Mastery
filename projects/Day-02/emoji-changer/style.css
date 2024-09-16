@@ -26,7 +26,7 @@ body {
   align-items: center;
 }
 
-.emoji-div .image {
+.emoji-div #image {
   width: 100%;
   height: 100%;
   object-fit: contain;
