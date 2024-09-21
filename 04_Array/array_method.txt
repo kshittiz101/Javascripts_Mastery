@@ -3,19 +3,24 @@ Array methods in JavaScript
 Adding and Removing Elements
 
 - push(...items):
-    Adds one or more elements to the end of an array and returns the new length of the array.
+    Adds one or more elements to the end of an 
+    array and returns the new length of the array.
 
 -  pop():
-    Removes the last element from an array and returns that element.
+    Removes the last element from an array 
+    and returns that element.
 
 - shift():
-    Removes the first element from an array and returns that element.
+    Removes the first element from an array and 
+    returns that element.
 
 - unshift(...items):
-    Adds one or more elements to the beginning of an array and returns the new length of the array.
+    Adds one or more elements to the beginning 
+    of an array and returns the new length of the array.
 
 -  splice(start, deleteCount, ...items):
-    Changes the contents of an array by removing or replacing existing elements and/or adding new elements.
+    Changes the contents of an array by removing or replacing 
+    existing elements and/or adding new elements.
 
 ----------------------------------------------------------------------------------------------------------------
 Copying and Slicing
