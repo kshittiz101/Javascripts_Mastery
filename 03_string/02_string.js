@@ -1,3 +1,7 @@
+// string method and properties
+let str3 = "javascripts";
+console.log(str3.length);
+
 // commonly used method and properties
 // charAt(), indexOf(), slice(startIndex, endIndex),
 // toUpperCase() , toLowerCase()

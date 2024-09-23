@@ -1,14 +1,11 @@
-// Escaping Special Characters
-const text = 'He said, "Hello, it\'s a sunny day."';
-console.log(text);
-// Output: He said, "Hello, it's a sunny day."
+// all method in js it seem like they are change original string value,
+// but in reality they are returing new string
 
-const path = "C:\\Program Files\\MyApp";
-console.log(path);
-// Output: C:\Program Files\MyApp
+let str = "Hello";
+let newStr = str.replace("H", "h"); // Creates a new string
+console.log(newStr); // Output: "hello"
+console.log(str); // Output: "Hello" (original string remains unchanged)
 
-const multiline = "First line.\nSecond line.";
-console.log(multiline);
-// Output:
-// First line.
-// Second line.
+let str2 = str.toLocaleUpperCase();
+console.log(str);
+console.log(str2);
