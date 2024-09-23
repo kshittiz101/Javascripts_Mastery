@@ -23,5 +23,9 @@ html {
   transform: translate(-50%, -50%);
   border-radius: 20px;
   box-shadow: 5px 5px 10px 5px rgb(175, 173, 173);
-  color: white;
+  color: rgb(36, 192, 231);
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
