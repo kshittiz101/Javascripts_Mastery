@@ -43,21 +43,41 @@ Iterating
 - **`flat(depth)`**: Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 - **`flatMap(callback(currentValue, index, array), thisArg)`**: First maps each element using a mapping function, then flattens the result into a new array.
 
+------------------------------------------------------------------------------------------------------------
 ### Searching
-- **`indexOf(searchElement, fromIndex)`**: Returns the first index at which a given element can be found in the array, or -1 if it is not present.
-- **`lastIndexOf(searchElement, fromIndex)`**: Returns the last index at which a given element can be found in the array, or -1 if it is not present.
-- **`includes(searchElement, fromIndex)`**: Determines whether an array contains a certain element, returning true or false as appropriate.
-- **`findLast(callback(element, index, array), thisArg)`**: Returns the last element in the array that satisfies the provided testing function.
-- **`findLastIndex(callback(element, index, array), thisArg)`**: Returns the index of the last element that satisfies the provided testing function.
+- indexOf(searchElement, fromIndex)`
+    Returns the first index at which a given element can be found in the array, 
+    or -1 if it is not present.
+
+- lastIndexOf(searchElement, fromIndex): 
+    Returns the last index at which a given element can 
+    be found in the array, or -1 if it is not present.
+
+- includes(searchElement, fromIndex): 
+    Determines whether an array contains a certain element, 
+    returning true or false as appropriate.
+
+- findLast(callback(element, index, array), thisArg): 
+    Returns the last element in the array that satisfies the 
+    provided testing function.
+
+- findLastIndex(callback(element, index, array), thisArg): 
+    Returns the index of the last element that satisfies the provided testing function.
+
+----------------------------------------------------------------------------------------------------------
 
 ### Sorting and Reversing
 - **`sort([compareFunction])`**: Sorts the elements of an array in place and returns the sorted array.
 - **`reverse()`**: Reverses the elements of an array in place.
 
-### Concatenating and Joining
-- **`concat(...items)`**: Used to merge two or more arrays into a new array.
-- **`join([separator])`**: Joins all elements of an array into a string, separated by the specified separator.
 
+-------------------------------------------------------------------------------------------------------------
+### Concatenating and Joining
+- concat(...items): 
+    Used to merge two or more arrays into a new array.
+- join([separator]): 
+    Joins all elements of an array into a string, separated by the specified separator.
+-------------------------------------------------------------------------------------------------------------
 ### Other
 - **`toString()`**: Returns a string representation of the array.
 - **`toLocaleString()`**: Returns a localized string representation of the array.
