@@ -3,8 +3,11 @@
 
 // creating class
 class Person {
+  // constructor in js is special method, it automatically invoked during the creation
+  // of the object
+  // is used to initialize an object instance or create an object
   constructor(name, age) {
-    this.name = name;
+    this.name = name; // this.name --> class properties  name --> parameter
     this.age = age;
   }
   run() {
