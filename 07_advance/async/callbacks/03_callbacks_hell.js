@@ -25,6 +25,9 @@ function fourth() {
   }, 2000);
 }
 
+// wrong way to perform callback
+// first(second(third(fourth)));
+
 // this structure is not maintainable, easy to understand, and read as well
 first(() => {
   second(() => {
