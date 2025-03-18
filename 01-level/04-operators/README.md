@@ -8,16 +8,14 @@ Operators are symbols that perform operations on values and variables. JavaScrip
 
 Used to perform mathematical operations.
 
-| Operator | Description         | Example          | Output |
-| -------- | ------------------- | ---------------- | ------ |
-| `+`      | Addition            | `5 + 2`          | `7`    |
-| `-`      | Subtraction         | `5 - 2`          | `3`    |
-| `*`      | Multiplication      | `5 * 2`          | `10`   |
-| `/`      | Division            | `5 / 2`          | `2.5`  |
-| `%`      | Modulus (Remainder) | `5 % 2`          | `1`    |
-| `**`     | Exponentiation      | `5 ** 2`         | `25`   |
-| `++`     | Increment           | `let x = 5; x++` | `6`    |
-| `--`     | Decrement           | `let y = 5; y--` | `4`    |
+- `+` Addition (`5 + 2` → `7`)
+- `-` Subtraction (`5 - 2` → `3`)
+- `*` Multiplication (`5 * 2` → `10`)
+- `/` Division (`5 / 2` → `2.5`)
+- `%` Modulus (Remainder) (`5 % 2` → `1`)
+- `**` Exponentiation (`5 ** 2` → `25`)
+- `++` Increment (`let x = 5; x++` → `6`)
+- `--` Decrement (`let y = 5; y--` → `4`)
 
 **Example:**
 
@@ -34,15 +32,13 @@ console.log(a % b); // 1 (10 divided by 3 leaves remainder 1)
 
 Used to assign values to variables.
 
-| Operator | Example   | Equivalent To |
-| -------- | --------- | ------------- |
-| `=`      | `x = 5`   | `x = 5`       |
-| `+=`     | `x += 3`  | `x = x + 3`   |
-| `-=`     | `x -= 3`  | `x = x - 3`   |
-| `*=`     | `x *= 3`  | `x = x * 3`   |
-| `/=`     | `x /= 3`  | `x = x / 3`   |
-| `%=`     | `x %= 3`  | `x = x % 3`   |
-| `**=`    | `x **= 3` | `x = x ** 3`  |
+- `=` Assign (`x = 5` → `x = 5`)
+- `+=` Add and assign (`x += 3` → `x = x + 3`)
+- `-=` Subtract and assign (`x -= 3` → `x = x - 3`)
+- `*=` Multiply and assign (`x *= 3` → `x = x * 3`)
+- `/=` Divide and assign (`x /= 3` → `x = x / 3`)
+- `%=` Modulus and assign (`x %= 3` → `x = x % 3`)
+- `**=` Exponentiation and assign (`x **= 3` → `x = x ** 3`)
 
 **Example:**
 
@@ -58,16 +54,14 @@ console.log(num); // 15
 
 Used to compare values and return `true` or `false`.
 
-| Operator | Description                     | Example     | Output  |
-| -------- | ------------------------------- | ----------- | ------- |
-| `==`     | Equal to (value only)           | `5 == "5"`  | `true`  |
-| `===`    | Strict equal (value & type)     | `5 === "5"` | `false` |
-| `!=`     | Not equal (value only)          | `5 != "5"`  | `false` |
-| `!==`    | Strict not equal (value & type) | `5 !== "5"` | `true`  |
-| `>`      | Greater than                    | `10 > 5`    | `true`  |
-| `<`      | Less than                       | `10 < 5`    | `false` |
-| `>=`     | Greater than or equal to        | `5 >= 5`    | `true`  |
-| `<=`     | Less than or equal to           | `5 <= 3`    | `false` |
+- `==` Equal to (value only) (`5 == "5"` → `true`)
+- `===` Strict equal (value & type) (`5 === "5"` → `false`)
+- `!=` Not equal (value only) (`5 != "5"` → `false`)
+- `!==` Strict not equal (value & type) (`5 !== "5"` → `true`)
+- `>` Greater than (`10 > 5` → `true`)
+- `<` Less than (`10 < 5` → `false`)
+- `>=` Greater than or equal to (`5 >= 5` → `true`)
+- `<=` Less than or equal to (`5 <= 3` → `false`)
 
 **Example:**
 
@@ -83,11 +77,9 @@ console.log(5 == "5"); // true (only checks value)
 
 Used for logical operations (AND, OR, NOT).
 
-| Operator | Description             | Example         | Output                         |
-| -------- | ----------------------- | --------------- | ------------------------------ | ----- | --- | ------ | ------ |
-| `&&`     | Logical AND (both true) | `true && false` | `false`                        |
-| `        |                         | `               | Logical OR (at least one true) | `true |     | false` | `true` |
-| `!`      | Logical NOT (negation)  | `!true`         | `false`                        |
+- `&&` Logical AND (both true) (`true && false` → `false`)
+- `||` Logical OR (at least one true) (`true || false` → `true`)
+- `!` Logical NOT (negation) (`!true` → `false`)
 
 **Example:**
 
@@ -105,14 +97,12 @@ console.log(!(x > 5)); // false (negates true)
 
 Used for operations at the binary level.
 
-| Operator | Description   | Example  |
-| -------- | ------------- | -------- | --- | --- |
-| `&`      | AND           | `5 & 1`  |
-| `        | `             | OR       | `5  | 1`  |
-| `^`      | XOR           | `5 ^ 1`  |
-| `~`      | NOT (bitwise) | `~5`     |
-| `<<`     | Left shift    | `5 << 1` |
-| `>>`     | Right shift   | `5 >> 1` |
+- `&` AND (`5 & 1` → `1`)
+- `|` OR (`5 | 1` → `5`)
+- `^` XOR (`5 ^ 1` → `4`)
+- `~` NOT (`~5` → `-6`)
+- `<<` Left shift (`5 << 1` → `10`)
+- `>>` Right shift (`5 >> 1` → `2`)
 
 **Example:**
 
@@ -127,9 +117,7 @@ console.log(5 | 1); // 5 (binary: 0101 | 0001 = 0101)
 
 Short-hand for `if-else` condition.
 
-| Operator | Description      | Example                     |
-| -------- | ---------------- | --------------------------- |
-| `? :`    | Ternary Operator | `condition ? expr1 : expr2` |
+- `? :` Ternary Operator (`condition ? expr1 : expr2`)
 
 **Example:**
 
@@ -145,10 +133,8 @@ console.log(status); // "Adult"
 
 Used to check types.
 
-| Operator     | Description                  | Example                  |
-| ------------ | ---------------------------- | ------------------------ |
-| `typeof`     | Returns type                 | `typeof 42` → `"number"` |
-| `instanceof` | Checks instance of an object | `x instanceof Array`     |
+- `typeof` Returns type (`typeof 42` → `"number"`)
+- `instanceof` Checks instance of an object (`x instanceof Array` → `true`)
 
 **Example:**
 
@@ -171,21 +157,6 @@ let username = null;
 let defaultName = username ?? "Guest";
 console.log(defaultName); // "Guest"
 ```
-
----
-
-## **Summary Table of JavaScript Operators**
-
-| Type          | Example                     | Purpose              |
-| ------------- | --------------------------- | -------------------- | ------------------- | ---------------- |
-| Arithmetic    | `+`, `-`, `*`, `/`, `%`     | Math operations      |
-| Assignment    | `=`, `+=`, `-=`, `*=`       | Assign values        |
-| Comparison    | `==`, `===`, `!=`, `<`, `>` | Compare values       |
-| Logical       | `&&`, `                     |                      | `, `!`              | Logic operations |
-| Bitwise       | `&`, `                      | `, `^`, `~`, `<<`    | Binary calculations |
-| Ternary       | `condition ? val1 : val2`   | Short `if-else`      |
-| Type Checking | `typeof`, `instanceof`      | Check data type      |
-| Nullish       | `??`                        | Handle `null` values |
 
 ---
 
