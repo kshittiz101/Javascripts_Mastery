@@ -17,9 +17,14 @@ let variableName = value;
 For example:
 
 ```javascript
-let name = "John"; // Declares a variable named 'name' with a value 'John'
-const pi = 3.14; // Declares a constant variable
-var age = 25; // Declares a variable using the older method
+let name = "John"; 
+// Declares a variable named 'name' with a value 'John'
+
+const pi = 3.14; 
+// Declares a constant variable
+
+var age = 25; 
+// Declares a variable using the older method
 ```
 
 ---
@@ -37,7 +42,8 @@ var age = 25; // Declares a variable using the older method
    - Example:
      ```javascript
      let name = "John";
-     let Name = "Doe"; // This is a different variable
+     let Name = "Doe"; 
+     // This is a different variable
      ```
 
 3. **Reserved Keywords**:
@@ -45,7 +51,8 @@ var age = 25; // Declares a variable using the older method
    - Variable names cannot use JavaScript reserved keywords like `let`, `const`, `if`, `else`, etc.
    - Example:
      ```javascript
-     let var = 5; // Invalid
+     let var = 5; 
+     // Invalid variable declaration
      ```
 
 4. **No Special Characters**:

@@ -69,4 +69,4 @@ JavaScript is a **cross-platform**, **single-threaded**, and **dynamic** languag
 - **Desktop Applications**: Electron allows JS to build cross-platform desktop apps.
 - **IoT (Internet of Things)**: Running JS on devices with frameworks like **Johnny-Five**.
 
-JavaScript's versatility and constant evolution have made it **one of the most popular programming languages** globally. 🚀
+JavaScript's versatility and constant evolution have made it **one of the most popular programming languages** globally.
