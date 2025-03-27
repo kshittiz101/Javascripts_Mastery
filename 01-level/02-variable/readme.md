@@ -1,3 +1,5 @@
+# Variable in js
+
 ### **What is a Variable in JavaScript?**
 
 A **variable** in JavaScript is a container that stores data values. You can think of it as a named storage for data that your program can manipulate. Variables are fundamental to programming as they allow you to store, retrieve, and manipulate data.

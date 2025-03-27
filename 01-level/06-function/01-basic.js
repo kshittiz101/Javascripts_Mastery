@@ -66,7 +66,7 @@ console.log(result);
 // A function stops executing once it hits return.
 // anythings return after the return keywords the code will not execute
 
-// Default parameters
+// Default parameters or Optional Parameters
 function defParameter(schoolName = "Amar Jyoti") {
   console.log(schoolName);
 }
