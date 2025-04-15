@@ -1,4 +1,5 @@
-// Conditional statements in JavaScript are used to execute different blocks of code based on certain conditions. Here are the main types of conditional
+// Conditional statements in JavaScript are used to execute different blocks of code based on certain conditions.
+// Here are the main types of conditional
 
 // if statement
 // if statement shows block of code when the condition is true
