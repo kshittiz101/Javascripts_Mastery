@@ -51,6 +51,8 @@ unshift(...items); // Adds elements to the start, returns new length.
 shift(); // Removes and returns the first element.
 ```
 
+![alt text](pushwithspread.png)
+
 ```javascript
 let fruits = ["apple", "banana"];
 fruits.push("orange"); // ["apple", "banana", "orange"]
