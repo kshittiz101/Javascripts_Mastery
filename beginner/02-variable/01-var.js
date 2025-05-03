@@ -1,4 +1,6 @@
-// variable is a container that store value, which can be later manipulate, update or use to perform some action
+// variable is a container that store value, which can be later manipulate, update or use
+//  to perform some action
+
 // varibale can we create using
 // 1. var(function scoped)
 // 2. let(block scoped)
@@ -11,10 +13,21 @@
 // Redeclaration: Can be redeclared in the same scope.
 // Block Scope: ❌ Not block-scoped (ignores {} blocks).
 
+"use strict";
+
 // creating variable
 var firstName = "kshittiz";
 console.log(firstName);
 
 // updating variable value
-firstName = "Harry Potter";
-console.log(firstName);
+var fistName2 = "Harry Potter";
+console.log(fistName2);
+
+// hoisted
+// var is hoisted on the top, get initialized with value undefined
+console.info("Working on Hoisted Property of var ");
+console.log(lastName); // undefined
+var lastName = "Chaudhary";
+console.log(lastName);
+
+console.log(firstName + " " + lastName);

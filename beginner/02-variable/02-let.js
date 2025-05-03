@@ -11,7 +11,7 @@ let num1 = 23;
 
 if (true) {
   let num1 = 45;
-  // this going to be another variable of the if scope
+  // this going to be another variable of the  if scope
   console.log("This is a local variable", num1);
 }
 
