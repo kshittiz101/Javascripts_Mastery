@@ -31,3 +31,6 @@ console.log(arr2); // [101, 102, "Harry Potter"]
 
 // total length of the array
 console.info(arr2.length); // 3
+
+// an array is an object types
+console.log(typeof arr1); // object
