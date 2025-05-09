@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Datatypes in Js</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: rgba(0, 0, 0, 0.685);
+        min-height: 100%;
+        width: 100%;
+        color: whitesmoke;
+        font-family: Arial, sans-serif;
+      }
+
+      .main {
+        padding: 2rem;
+      }
+
+      .title-style {
+        line-height: 2.5rem;
+        font-size: 2rem;
+      }
+
+      .title2-style {
+        line-height: 2.3rem;
+        font-size: 1.8rem;
+      }
+
+      .para-style {
+        margin: 1rem 0rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        padding: 1rem 0rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.126);
+      }
+
+      ol,
+      li {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+      }
+
+      li strong {
+        color: #ffd700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title-style">Introduction to Datatypes in JS</h1>
+      <p class="para-style">
+        JavaScript is a dynamically typed language, meaning variables can hold
+        values of any type without explicit type declarations. Data types define
+        the kind of values that can be stored and manipulated. JavaScript
+        categorizes data types into Primitive (pass by value) and Non-Primitive
+        (pass by reference) types.
+      </p>
+
+      <h2 class="title2-style">Types of Data Types</h2>
+      <ol>
+        <li>
+          Primitive Data Types (Pass By Value)
+          <ol style="list-style: lower-roman">
+            <li>
+              <strong>Number:</strong> Represents numeric values, including
+              integers and floating-point numbers.
+            </li>
+            <li>
+              <strong>String:</strong> Represents a sequence of characters.
+              Example: "Hello, world!"
+            </li>
+            <li>
+              <strong>Boolean:</strong> Logical data type with only two values:
+              true or false.
+            </li>
+            <li>
+              <strong>null:</strong> Represents a deliberate non-value or empty
+              value.
+            </li>
+            <li>
+              <strong>undefined:</strong> A variable that has been declared but
+              not assigned a value.
+            </li>
+            <li>
+              <strong>BigInt:</strong> Used for very large integers beyond the
+              safe range of Number.
+            </li>
+            <li>
+              <strong>Symbol:</strong> Unique and immutable values, often used
+              as object property keys.
+            </li>
+          </ol>
+        </li>
+        <li>
+          Non-Primitive Data Types (Pass By Reference)
+          <ol>
+            <li>
+              <strong>Array:</strong> An ordered list of values, accessed by
+              index.
+            </li>
+            <li>
+              <strong>Object:</strong> A collection of key-value pairs used to
+              store structured data.
+            </li>
+            <li>
+              <strong>Function:</strong> Reusable block of code designed to
+              perform a specific task.
+            </li>
+            <li><strong>Date:</strong> Used to work with dates and times.</li>
+            <li>
+              <strong>RegExp:</strong> Represents regular expressions used for
+              pattern matching in strings.
+            </li>
+            <li>
+              <strong>Map:</strong> Stores key-value pairs where keys can be of
+              any data type.
+            </li>
+            <li>
+              <strong>Set:</strong> A collection of unique values with no
+              duplicates.
+            </li>
+            <li>
+              <strong>WeakMap:</strong> Like Map, but keys must be objects and
+              are weakly referenced.
+            </li>
+            <li>
+              <strong>WeakSet:</strong> Like Set, but only stores objects and
+              they are weakly referenced.
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
