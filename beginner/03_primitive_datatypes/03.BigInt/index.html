@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Number Type in JavaScript</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: rgba(0, 0, 0, 0.85);
+        min-height: 100%;
+        width: 100%;
+        color: whitesmoke;
+        font-family: Arial, sans-serif;
+      }
+
+      .main {
+        padding: 5rem;
+      }
+
+      .title-style {
+        line-height: 2.5rem;
+        font-size: 2rem;
+      }
+
+      .title2-style {
+        line-height: 2.3rem;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+      }
+
+      .para-style {
+        margin: 1rem 0;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.126);
+      }
+
+      ul {
+        padding-left: 2rem;
+      }
+
+      ul li {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+      }
+
+      li strong {
+        color: #ffd700;
+      }
+
+      code {
+        background-color: #333;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title-style">Introduction to Number Type in JavaScript</h1>
+
+      <p class="para-style">
+        In JavaScript, numerical values are represented using the
+        <strong>Number</strong> data type. This type can hold both
+        <strong>integers</strong> and <strong>floating-point</strong> numbers.
+        JavaScript numbers are based on the 64-bit floating-point format (IEEE
+        754).
+      </p>
+
+      <h2 class="title2-style">1. Basic Examples</h2>
+      <p class="para-style">
+        Examples of numbers in JS:<br />
+        <code>let a = 10;</code><br />
+        <code>let b = 3.14;</code><br />
+        <code>let c = -25;</code>
+      </p>
+
+      <h2 class="title2-style">2. Special Number Values</h2>
+      <div class="para-style">
+        JavaScript provides special numeric values:
+        <ul>
+          <li>
+            <strong>Infinity:</strong> Represents positive infinity. Example:
+            <code>1 / 0</code>
+          </li>
+          <li>
+            <strong>-Infinity:</strong> Represents negative infinity. Example:
+            <code>-1 / 0</code>
+          </li>
+          <li>
+            <strong>NaN (Not a Number):</strong> Returned from invalid math.
+            Example: <code>"abc" * 2</code>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="title2-style">3. NaN Example</h2>
+      <p class="para-style">
+        <code>console.log(isNaN("abc"));</code> → <code>true</code><br />
+        <code>console.log(Number("abc"));</code> → <code>NaN</code>
+      </p>
+
+      <h2 class="title2-style">4. Useful Number Methods & Functions</h2>
+      <div class="para-style">
+        <ul>
+          <li><strong>Number()</strong> – Converts a value to a number.</li>
+          <li>
+            <strong>parseInt()</strong> – Parses a string into an integer.
+          </li>
+          <li>
+            <strong>parseFloat()</strong> – Parses a string into a
+            floating-point number.
+          </li>
+          <li>
+            <strong>toFixed()</strong> – Rounds and formats a number to fixed
+            decimals.
+          </li>
+          <li>
+            <strong>toString(base)</strong> – Converts number to a string in the
+            specified base.<br />
+            Example: <code>(255).toString(2)</code> → <code>"11111111"</code
+            ><br />
+            Example: <code>(255).toString(16)</code> → <code>"ff"</code>
+          </li>
+          <li>
+            <strong>isNaN()</strong> – Checks if value is NaN (after type
+            coercion).
+          </li>
+          <li>
+            <strong>Number.isNaN()</strong> – Checks if value is exactly NaN.
+          </li>
+          <li>
+            <strong>Number.isFinite()</strong> – Checks if value is a finite
+            number.
+          </li>
+          <li><strong>Math.round()</strong> – Rounds to nearest integer.</li>
+          <li><strong>Math.floor()</strong> – Rounds down.</li>
+          <li><strong>Math.ceil()</strong> – Rounds up.</li>
+          <li><strong>Math.trunc()</strong> – Removes decimal part.</li>
+          <li>
+            <strong>Number.MAX_VALUE</strong> – Largest positive number in JS.
+          </li>
+          <li>
+            <strong>Number.MIN_VALUE</strong> – Smallest positive number in JS.
+          </li>
+          <li>
+            <strong>Number.MAX_SAFE_INTEGER</strong> – Largest safe integer:
+            <code>2^53 - 1</code>
+          </li>
+          <li>
+            <strong>Number.MIN_SAFE_INTEGER</strong> – Smallest safe integer:
+            <code>-(2^53 - 1)</code>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="title2-style">5. Type Checking</h2>
+      <p class="para-style">
+        <code>typeof 42</code> → <code>"number"</code><br />
+        <code>typeof NaN</code> → <code>"number"</code><br />
+        <code>typeof 42n</code> → <code>"bigint"</code>
+      </p>
+
+      <h2 class="title2-style">6. BigInt in JavaScript</h2>
+      <p class="para-style">
+        <strong>BigInt</strong> is a special numeric type in JavaScript used to
+        represent integers larger than
+        <code>Number.MAX_SAFE_INTEGER</code> (i.e., values beyond
+        <code>2^53 - 1</code>).<br /><br />
+        You create a BigInt by appending <code>n</code> to the end of an
+        integer:<br />
+        <code>let big = 1234567890123456789012345678901234567890n;</code><br />
+        BigInt values cannot be mixed with regular <code>Number</code> types in
+        arithmetic operations.
+      </p>
+
+      <h2 class="title2-style">7. Useful BigInt Methods & Properties</h2>
+      <div class="para-style">
+        <ul>
+          <li>
+            <strong>BigInt()</strong> – Converts a number or string to
+            BigInt.<br />
+            <code>BigInt("9007199254740995")</code> →
+            <code>9007199254740995n</code>
+          </li>
+          <li>
+            <strong>typeof</strong> – Used to check if a value is BigInt.<br />
+            <code>typeof 10n</code> → <code>"bigint"</code>
+          </li>
+          <li>
+            <strong>Supports arithmetic operators:</strong>
+            <code>+ - * / % **</code><br />
+            Example: <code>10000000000000000000n + 1n</code> →
+            <code>10000000000000000001n</code>
+          </li>
+          <li>
+            <strong>Cannot be used with Math methods</strong> like
+            <code>Math.sqrt()</code>, <code>Math.random()</code>.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
