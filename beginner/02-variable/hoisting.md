@@ -64,7 +64,7 @@ Unlike `var`, **`let` and `const` stay in the "Temporal Dead Zone" (TDZ)** until
 greet(); // ✅ "Hello, world!"
 
 function greet() {
-  console.log("Hello, world!");
+  console.log('Hello, world!');
 }
 ```
 
@@ -73,7 +73,7 @@ function greet() {
 ```javascript
 function greet() {
   // Fully hoisted
-  console.log("Hello, world!");
+  console.log('Hello, world!');
 }
 greet();
 ```
@@ -91,7 +91,7 @@ sayHello();
 // ❌ TypeError: sayHello is not a function
 
 var sayHello = function () {
-  console.log("Hello!");
+  console.log('Hello!');
 };
 ```
 
@@ -101,7 +101,7 @@ var sayHello = function () {
 var sayHello; // Hoisted as undefined
 sayHello(); // ❌ TypeError (sayHello is undefined)
 sayHello = function () {
-  console.log("Hello!");
+  console.log('Hello!');
 };
 ```
 
@@ -112,7 +112,7 @@ console.log(sayHi);
 // ❌ ReferenceError: Cannot access 'sayHi' before initialization
 
 let sayHi = function () {
-  console.log("Hi!");
+  console.log('Hi!');
 };
 ```
 

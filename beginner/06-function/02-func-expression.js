@@ -6,7 +6,6 @@ const functionName = function(parameters) {
     // Function body
     return value; // Optional
 };
-
 */
 
 const sum = function (a, b) {

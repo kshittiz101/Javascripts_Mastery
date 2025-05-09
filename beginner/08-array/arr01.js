@@ -3,10 +3,8 @@
 // characteristers of an array in js
 // 1. Ordered collection
 // 2. Dynamic Sized
-// 3.Heterogeneous - can store multiple value in single array
-
+// 3. Heterogeneous - can store multiple value in single array
 // 4. Mutable - can be change the value of the element after creation
-
 // 5. Object types
 // 6. Sparse Arrays: Can have empty slots in array
 // 7. Shallow Copy Behavior

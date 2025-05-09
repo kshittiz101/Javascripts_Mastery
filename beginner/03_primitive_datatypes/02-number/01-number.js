@@ -14,7 +14,7 @@ console.log(scientific);
 // NaN --> not a number
 // NaN is a number types
 let result = 10 / "kc ";
-console.log(result);
+console.log("the result is :", result); //NaN
 console.log(typeof result);
 
 // Infinity and -Infinity
