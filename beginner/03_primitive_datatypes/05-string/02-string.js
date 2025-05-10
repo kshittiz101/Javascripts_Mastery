@@ -25,3 +25,11 @@ console.log(subStr.substring(-0)); // negative index start from zero
 console.log(subStr.substring(4, 1)); // Java it will swap start and end index
 
 // Prefer slice() in modern JavaScript for more predictable behavior, especially when working with negative indices.
+
+// charAt(index) --> returns character at index
+let value = 'Kshittiz';
+console.log(value.charAt(3)); //i
+
+// at(index)
+//The at() method returns an indexed character from a string.
+console.log(value.at(0));
