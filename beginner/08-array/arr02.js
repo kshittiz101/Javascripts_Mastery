@@ -1,24 +1,33 @@
-// array built in methods
-// addding and removing method in array
+// adding and removing methods
 
-let arr1 = [10, 20, 30, 50, 80];
-console.log(arr1.length);
+// adding element in array
+// push(...items) --> add one or more elements at the end of the array
+let arr1 = [10, 20, 35];
+arr1.push(4, 5);
+console.log(arr1);
 
-// push() adds elements to the end, returns new length
-arr1.push(20);
-console.log(arr1); // [10,20,30,50,80,20]
+// unshift(...items) --> adds one or more element at the beginning of the array
+let arr2 = [30, 50, 55];
+arr2.unshift(22, 11);
+console.log(arr2);
 
-// pop() remove element from end i.e right side fo the array
-let arr2 = [22, 33, 44];
-arr2.pop();
-console.log(arr2); // [22,33]
+// splice(start, deleteCount, ...items)
+let arr3 = [55, 65, 66, 69];
+arr3.splice(1, 0, 88, 89); // it add elements from index start from 1 and deleter  count is zero i.e no element is deleted
+console.log(arr3);
 
-// unshift() -- adds elements at the starting of an array
-let arr3 = [20, 35, 65];
-arr3.unshift(85);
-console.log(arr3); // [85,20,35,65]
+let arr4 = [53, 33, 65, 66];
+arr4.splice(2, 2, 90, 87);
 
-// shift() -- remove elements from start of and array
-let arr4 = [55, 65, 85, 89];
-arr4.shift();
-console.log(arr4); // [65,85,89]
+// here from index 2 to 2 index from get deleted and items get inserted
+
+console.log(arr4);
+
+// direct assignment
+// Direct Assignment: Add elements by assigning to an index (can create sparse arrays if index is beyond length).
+let arr5 = [10, 55, 25];
+arr5[3] = 57;
+console.log(arr5);
+
+arr5[10] = 40;
+console.log(arr5); // [ 10, 55, 25, 57, <6 empty items>, 40 ]
