@@ -13,5 +13,10 @@ console.log(value); // undefiend
 console.log(typeof value); // undefiend
 
 // undefined is falsy value
-function getValue() {} // this function without any return value will be undefined
+// this function without any return value will be undefined
+function getValue() {}
 console.log(getValue());
+
+let obj = {};
+console.log(obj.name);
+// this will return undefined because that object properties not exists
