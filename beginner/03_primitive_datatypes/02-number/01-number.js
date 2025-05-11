@@ -1,4 +1,4 @@
-// in js numeberic value is represent using  Number datat types, 
+// in js numeberic value is represent using  Number datat types,
 // it can hold both integer and float pointing number data
 
 let num1 = 22
@@ -13,18 +13,17 @@ console.log(num3)
 let num4 = -Infinity
 console.log(num4)
 
-
 // NaN (Not a number)
-// it valid whether the value is valid numerical value or not 
-let result = "hello" - 10;
-console.log(result); // NaN
-let num6 = "ok" + 20 // it will be concate
+// it valid whether the value is valid numerical value or not
+let result = 'hello' - 10
+console.log(result) // NaN
+let num6 = 'ok' + 20 // it will be concate
 console.log(num6)
 
 // Max safe integer
-console.log("Max safe Integer",Number.MAX_SAFE_INTEGER)
-console.log("Min safe integer: ",Number.MIN_SAFE_INTEGER )
+console.log('Max safe Integer', Number.MAX_SAFE_INTEGER)
+console.log('Min safe integer: ', Number.MIN_SAFE_INTEGER)
 
-// type 
-let typeOfNum = 55;
-console.log("Type of number is: ",typeof(typeOfNum)) // number
+// type
+let typeOfNum = 55
+console.log('Type of number is: ', typeof typeOfNum) // number
