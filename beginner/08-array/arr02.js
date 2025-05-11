@@ -1,22 +1,24 @@
-// Array built-in Methods
-let arr1 = [10, 20, 30, 50];
-// array length
-console.log(arr1.length); // 4
+// array built in methods
+// addding and removing method in array
 
-// last index value
-console.log(arr1[arr1.length - 1]); // 50
+let arr1 = [10, 20, 30, 50, 80];
+console.log(arr1.length);
 
 // push() adds elements to the end, returns new length
+arr1.push(20);
+console.log(arr1); // [10,20,30,50,80,20]
 
-arr1.push(20, 50, 66);
+// pop() remove element from end i.e right side fo the array
+let arr2 = [22, 33, 44];
+arr2.pop();
+console.log(arr2); // [22,33]
 
-let arr3 = [25, 55, 65];
-arr1.push(arr3);
-console.log(arr1);
+// unshift() -- adds elements at the starting of an array
+let arr3 = [20, 35, 65];
+arr3.unshift(85);
+console.log(arr3); // [85,20,35,65]
 
-let arr4 = [12, 23, 25];
-let arr5 = [22, 23, 5];
-
-// use spread operator when you want to push element individually in array
-arr4.push(...arr5);
-console.log(arr4);
+// shift() -- remove elements from start of and array
+let arr4 = [55, 65, 85, 89];
+arr4.shift();
+console.log(arr4); // [65,85,89]

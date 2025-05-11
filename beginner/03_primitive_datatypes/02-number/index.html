@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Number Data Types in JavaScript</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: rgba(0, 0, 0, 0.85);
+        min-height: 100%;
+        width: 100%;
+        color: whitesmoke;
+        font-family: Arial, sans-serif;
+      }
+
+      .main {
+        padding: 5rem;
+      }
+
+      .title-style {
+        line-height: 2.5rem;
+        font-size: 2rem;
+      }
+
+      .title2-style {
+        line-height: 2.3rem;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+      }
+
+      .para-style {
+        margin: 1rem 0;
+        line-height: 2rem;
+        font-size: 1.2rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.126);
+      }
+
+      ul {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+      }
+
+      li {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        padding: 0.3rem 0;
+      }
+
+      li strong {
+        color: #ffd700;
+      }
+
+      code {
+        background-color: #333;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="title-style">
+        Introduction to Number Data Types in JavaScript
+      </h1>
+
+      <p class="para-style">
+        In JavaScript, numerical values are represented using the
+        <strong>Number</strong> data type. This type can store both
+        <strong>integers</strong> and <strong>floating-point</strong> numbers.
+        All numbers in JavaScript use the 64-bit floating-point format defined
+        by the IEEE 754 standard.
+      </p>
+
+      <h2 class="title2-style">1. Basic Examples</h2>
+      <p class="para-style">
+        Examples of number values in JavaScript:
+        <br />
+        <code>let a = 10;</code> <br />
+        <code>let b = 3.14;</code> <br />
+        <code>let c = -25;</code>
+      </p>
+
+      <h2 class="title2-style">2. Special Number Values</h2>
+      <div class="para-style">
+        JavaScript also includes special numeric values:
+        <ul>
+          <li>
+            <strong>Infinity:</strong> Represents positive infinity. Example:
+            <code>1 / 0</code>
+          </li>
+          <li>
+            <strong>-Infinity:</strong> Represents negative infinity. Example:
+            <code>-1 / 0</code>
+          </li>
+          <li>
+            <strong>NaN (Not a Number):</strong> Indicates an invalid numerical
+            result. Example: <code>"abc" * 2</code>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="title2-style">3. BigInt</h2>
+      <div class="para-style">
+        <strong>BigInt</strong> is a separate numeric type used for arbitrarily
+        large integers beyond the safe integer limit. <br /><br />
+        Example: <code>let big = 123456789012345678901234n;</code><br />
+        Note: You cannot mix <code>BigInt</code> and <code>Number</code> types
+        directly in operations.
+      </div>
+
+      <h2 class="title2-style">4. Useful Methods</h2>
+      <div class="para-style">
+        Common methods for working with numbers:
+        <ul>
+          <li>
+            <code>Number.isNaN(value)</code> – Checks if a value is
+            <code>NaN</code>
+          </li>
+          <li>
+            <code>Number.isFinite(value)</code> – Checks if a value is a finite
+            number
+          </li>
+          <li>
+            <code>parseInt("123abc")</code> – Converts a string to an integer:
+            <code>123</code>
+          </li>
+          <li>
+            <code>parseFloat("3.14xyz")</code> – Converts a string to a float:
+            <code>3.14</code>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="title2-style">5. Number Properties</h2>
+      <div class="para-style">
+        JavaScript provides several built-in constants related to numbers:
+        <ul>
+          <li><code>Number.MAX_VALUE</code> – Largest positive number</li>
+          <li>
+            <code>Number.MIN_VALUE</code> – Smallest positive number (closest to
+            0)
+          </li>
+          <li><code>Number.MAX_SAFE_INTEGER</code> – <code>2^53 - 1</code></li>
+          <li>
+            <code>Number.MIN_SAFE_INTEGER</code> – <code>-(2^53 - 1)</code>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="title2-style">6. Type Checking</h2>
+      <p class="para-style">
+        <code>typeof 42</code> → <code>"number"</code><br />
+        <code>typeof 42n</code> → <code>"bigint"</code>
+      </p>
+    </div>
+  </body>
+</html>

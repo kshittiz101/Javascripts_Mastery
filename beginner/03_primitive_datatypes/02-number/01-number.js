@@ -1,31 +1,29 @@
-// number is used to store both intergers and floating
-// points values in js
-let num1 = 10
-console.log(10)
+// in js numeberic value is represent using  Number datat types,
+// it can hold both integer and float pointing number data
 
-let num2 = 10.556
+let num1 = 22
+let num2 = 3.5
+let sci = 2e3
+console.log(num1)
 console.log(num2)
+console.log(sci)
 
-let negative = -50
-console.log(negative)
-let scientific = 2.5e4
-console.log(scientific)
+let num3 = Infinity
+console.log(num3)
+let num4 = -Infinity
+console.log(num4)
 
-// NaN --> not a number
-// NaN is a number types
-let result = 10 / 'kc '
-console.log(result)
-console.log(typeof result)
+// NaN (Not a number)
+// it valid whether the value is valid numerical value or not
+let result = 'hello' - 10
+console.log(result) // NaN
+let num6 = 'ok' + 20 // it will be concate
+console.log(num6)
 
-// Infinity and -Infinity
-let positiveInfinity = Infinity
-let negativeInfinity = -Infinity
-console.log(positiveInfinity)
-console.log(negativeInfinity)
+// Max safe integer
+console.log('Max safe Integer', Number.MAX_SAFE_INTEGER)
+console.log('Min safe integer: ', Number.MIN_SAFE_INTEGER)
 
-console.log(1 / 0) // Infinity
-console.log(-1 / 0) // -Infinity
-
-// MAX_VALUE AND MIN_VALUE
-console.log('MAX_VALUE in Js: ', Number.MAX_VALUE)
-console.log('MIN_VALUE in Js: ', Number.MIN_VALUE)
+// type
+let typeOfNum = 55
+console.log('Type of number is: ', typeof typeOfNum) // number

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Boolean in JavaScript</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: #121212;
+        color: #f0f0f0;
+        font-family: Arial, sans-serif;
+        padding: 2rem;
+      }
+
+      .main {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      h1,
+      h2 {
+        color: #ffd700;
+        margin-top: 2rem;
+      }
+
+      .section {
+        margin-top: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 1rem;
+      }
+
+      p {
+        line-height: 1.7rem;
+        font-size: 1.1rem;
+        margin: 1rem 0;
+      }
+
+      ul {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+      }
+
+      li {
+        margin: 0.5rem 0;
+      }
+
+      code {
+        background: #333;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+
+      strong {
+        color: #ffd700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Introduction to Boolean in JavaScript</h1>
+
+      <div class="section">
+        <h2>1. What is a Boolean?</h2>
+        <p>
+          The <strong>Boolean</strong> type represents a logical entity and can
+          have only two values: <code>true</code> or <code>false</code>.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>2. Boolean Literals</h2>
+        <p>
+          You can directly assign boolean values:
+          <br />
+          <code>let isAvailable = true;</code><br />
+          <code>let isLoggedIn = false;</code>
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>3. Boolean Constructor</h2>
+        <p>
+          You can convert values to Boolean using the
+          <code>Boolean()</code> function:
+          <br />
+          <code>Boolean(1)</code> → <code>true</code><br />
+          <code>Boolean(0)</code> → <code>false</code><br />
+          <code>Boolean("Hello")</code> → <code>true</code><br />
+          <code>Boolean("")</code> → <code>false</code>
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>4. Falsy Values in JavaScript</h2>
+        <p>
+          The following values are considered <strong>falsy</strong> (they
+          convert to <code>false</code> when used in a boolean context):
+        </p>
+        <ul>
+          <li><code>false</code></li>
+          <li><code>0</code> and <code>-0</code></li>
+          <li><code>""</code> (empty string)</li>
+          <li><code>null</code></li>
+          <li><code>undefined</code></li>
+          <li><code>NaN</code></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>5. Truthy Values</h2>
+        <p>
+          Any value that is not falsy is considered <strong>truthy</strong>. For
+          example:
+        </p>
+        <ul>
+          <li><code>true</code></li>
+          <li><code>{}</code> (empty object)</li>
+          <li><code>[]</code> (empty array)</li>
+          <li><code>"hello"</code></li>
+          <li><code>42</code></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>6. Logical Operators</h2>
+        <ul>
+          <li><code>!</code> – Logical NOT: <code>!true → false</code></li>
+          <li>
+            <code>&&</code> – Logical AND: <code>true && false → false</code>
+          </li>
+          <li>
+            <code>||</code> – Logical OR: <code>false || true → true</code>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>7. typeof Operator</h2>
+        <p>
+          You can check the type using <code>typeof</code>:
+          <br />
+          <code>typeof true</code> → <code>"boolean"</code>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
