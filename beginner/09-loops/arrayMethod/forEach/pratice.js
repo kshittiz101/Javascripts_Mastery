@@ -40,3 +40,18 @@ values.forEach(function (value) {
 });
 
 console.log(sum);
+
+// Output: 0: pen, 1: pencil, 2: eraser
+// let items = ['pen', 'pencil', 'eraser'];
+// let index = 0;
+
+// items.forEach(function (item) {
+//   console.log(`${index}: ${item}`);
+//   index++;
+// });
+
+let items = ['pen', 'pencil', 'eraser'];
+
+items.forEach(function (item, index) {
+  console.log(`${index}: ${item}`);
+});
