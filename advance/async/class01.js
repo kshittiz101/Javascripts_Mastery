@@ -4,16 +4,34 @@
 // asynchronous programming is used to handle tasks that take time to complete
 // it allows the program to continue running while waiting for the task to complete
 
-console.log('start');
+// console.log('start');
+
+// function display() {
+//   console.log('Inside setTimeout');
+// }
+
+// setTimeout(display, 0);
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// console.log('end');
+
+// some time if we want to destrory or don't want to call setTimeout Function
+// setTimeout return id instead
+
+console.log('script start');
 
 function display() {
   console.log('Inside setTimeout');
 }
-
-setTimeout(display, 0);
+// fetching the id of the settimeout function
+const id = setTimeout(display, 0);
 
 for (let i = 0; i < 10; i++) {
   console.log(i);
 }
-
+console.log('clearing  settimeout ');
+clearTimeout(id);
 console.log('end');
