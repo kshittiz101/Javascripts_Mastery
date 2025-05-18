@@ -1,3 +1,18 @@
+// js is single threaded, event driven driven programming language
+// sync programming
+// in sync programming the code will execute line by line, the task must finished move to next steps
+
+console.log('Start');
+function syncTask() {
+  // Simulate a blocking task
+  let start = Date.now();
+
+  while (Date.now() - start < 5000) {} // Blocks for 5 seconds
+  console.log('Sync task done');
+}
+syncTask();
+console.log('End');
+
 // js is single threaded, synchronous and interpreter language
 //Synchronous Code runs line by line. Each operation must complete before the next one starts.
 
