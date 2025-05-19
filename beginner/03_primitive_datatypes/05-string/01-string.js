@@ -36,7 +36,7 @@ text = text.replaceAll('cats', 'dogs');
 console.log(text);
 
 // search
-//search() searches a string for a value and returns the position of the first match
+//search() searches a string for a value and returns the index of the first match
 let text1 = 'Mr. Blue has a blue house';
 let position = text1.search('Blue');
 console.log(position);
