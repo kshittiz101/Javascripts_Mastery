@@ -1,24 +1,28 @@
-// setTimeout with argument
-function greeting(name) {
-  console.log('Good evening from ', name);
+function introduce(greeting, name, age) {
+  console.log(`${greeting}, my name is ${name} and I am ${age} years old.`);
 }
 
-setTimeout(greeting, 2000, 'Kshittiz');
+// Passing multiple arguments after the delay
+setTimeout(introduce, 2000, 'Hello', 'Kshittiz', 25);
 
-// arrow function
+// Arrow function with multiple arguments
 setTimeout(
-  (name) => {
-    console.log(`hello from async ${name}`);
+  (greeting, name, age) => {
+    console.log(`${greeting} from async arrow! I'm ${name}, ${age} years old.`);
   },
   3000,
-  'kc'
+  'Hi',
+  'KC',
+  26
 );
 
-// Anonymous Function as Callback
+// Anonymous function with multiple arguments
 setTimeout(
-  function (name) {
-    console.log(`hello from anonymous from ${name}`);
+  function (greeting, name, age) {
+    console.log(`${greeting} from anonymous! Name: ${name}, Age: ${age}`);
   },
-  5000,
-  'kshittiz'
+  4000,
+  'Hey',
+  'Kshittiz',
+  27
 );
