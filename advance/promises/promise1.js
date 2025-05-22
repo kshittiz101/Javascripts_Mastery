@@ -11,4 +11,44 @@
 // 2. Creating a Promise
 // A Promise is created using the Promise constructor, which takes an executor function with resolve and reject parameters.
 
-let promiseOne = new Promise((resolve, reject) => {})
+// syntax
+// const promiseOne = new Promise((resolve, reject) => {
+//   // Asynchronous operation
+//   if (success) {
+//     resolve(value) // Promise is fulfilled
+//   } else {
+//     reject(error) // Promise is rejected
+//   }
+// })
+
+// example -1
+// producing promises
+const promiseOne = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    const data = { id: 1, name: 'kshittiz' }
+    const error = true
+
+    if (!error) {
+      resolve(data) // success
+    } else {
+      reject('Error feteching data') //faliure
+    }
+  }, 2000)
+})
+
+// consuming promises
+// Promises are consumed using .then(), .catch(), .finally()
+
+//1 .then() is use to handle the fullfillment promises
+
+// 2. catch is used to handle rejection
+// 3. finally() - Runs regardless of outcome
+
+promiseOne
+  .then((data) => {
+    console.log('Success:', data)
+  })
+  .catch((error) => {
+    console.log('Error:', error)
+  })
+  .finally(() => console.log('Promise settled!'))
