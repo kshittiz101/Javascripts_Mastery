@@ -14,17 +14,17 @@
 
 // Example 1: Named Function as Callback
 function hello() {
-  console.log('Hello from 2 sec');
+  console.log("Hello from 2 sec");
 }
 setTimeout(hello, 2000);
 // Syntax: setTimeout(callbackFunction, delayInMilliseconds)
 
 // Example 2: Arrow Function as Callback
 setTimeout(() => {
-  console.log('Using arrow function: setTimeout after 3 sec');
+  console.log("Using arrow function: setTimeout after 3 sec");
 }, 3000);
 
 // Example 3: Anonymous Function as Callback
 setTimeout(function () {
-  console.log('Using anonymous function: setTimeout after 4 sec');
+  console.log("Using anonymous function: setTimeout after 4 sec");
 }, 4000);

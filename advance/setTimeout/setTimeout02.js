@@ -3,7 +3,7 @@ function introduce(greeting, name, age) {
 }
 
 // Passing multiple arguments after the delay
-setTimeout(introduce, 2000, 'Hello', 'Kshittiz', 25);
+setTimeout(introduce, 2000, "Hello", "Kshittiz", 25);
 
 // Arrow function with multiple arguments
 setTimeout(
@@ -11,8 +11,8 @@ setTimeout(
     console.log(`${greeting} from async arrow! I'm ${name}, ${age} years old.`);
   },
   3000,
-  'Hi',
-  'KC',
+  "Hi",
+  "KC",
   26
 );
 
@@ -22,7 +22,7 @@ setTimeout(
     console.log(`${greeting} from anonymous! Name: ${name}, Age: ${age}`);
   },
   4000,
-  'Hey',
-  'Kshittiz',
+  "Hey",
+  "Kshittiz",
   27
 );
