@@ -8,7 +8,7 @@ The `.then` method is the primary way to handle the result of a Promise once it 
 - onFulfilled`: Called when the Promise is fulfilled, receiving the resolved value.
 - onRejected`: Called when the Promise is rejected, receiving the rejection reason (error).
 
- Key Details
+Key Details
 
 - Return Value: `.then` always returns a new Promise, allowing chaining.
 - If `onFulfilled` or `onRejected` returns a value, the new Promise resolves with that value.
@@ -22,16 +22,16 @@ The `.then` method is the primary way to handle the result of a Promise once it 
 
 const myPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    let data = false;
+    let data = false
     if (data) {
-      resolve("data is fetched Successfully!");
+      resolve('data is fetched Successfully!')
     } else {
-      reject("data is not fetched got some error!");
+      reject('data is not fetched got some error!')
     }
-  }, 5000);
-});
+  }, 5000)
+})
 
 myPromise.then(
-  (value) => console.log("Fulfilled:", value), // "Fulfilled: data is fetched Successfully!"
-  (error) => console.log("Rejected:", error) // "Rejected: data is not fetched got some error!"
-);
+  (value) => console.log('Fulfilled:', value), // "Fulfilled: data is fetched Successfully!"
+  (error) => console.log('Rejected:', error) // "Rejected: data is not fetched got some error!"
+)

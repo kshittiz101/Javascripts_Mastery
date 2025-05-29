@@ -12,39 +12,39 @@
 // });
 
 //  example -1
-let arr = ['grapes', 'orange', 'banana'];
+let arr = ['grapes', 'orange', 'banana']
 let promise = new Promise(function (resolve, reject) {
   if (arr.includes('apple')) {
-    resolve('An arr includes apples');
+    resolve('An arr includes apples')
   } else {
-    reject('An array does not include apples in it');
+    reject('An array does not include apples in it')
   }
-});
+})
 
-console.log(promise);
+console.log(promise)
 
 //  example -1 (using arrow function)
-let arr2 = ['apples', 'orange', 'banana'];
+let arr2 = ['apples', 'orange', 'banana']
 let promise2 = new Promise((resolve, reject) => {
   if (arr2.includes('apples')) {
-    resolve('An arr includes apples');
+    resolve('An arr includes apples')
   } else {
-    reject('An array does not include apples in it');
+    reject('An array does not include apples in it')
   }
-});
+})
 
-console.log(promise2);
+console.log(promise2)
 
 // example - 02  promises in function
 function getData(arr) {
   return new Promise((resolve, reject) => {
     if (arr.includes('pen')) {
-      resolve('You Have pen to write ');
+      resolve('You Have pen to write ')
     } else {
-      reject("You don't have a pen to right");
+      reject("You don't have a pen to right")
     }
-  });
+  })
 }
-let arr3 = ['pencile', 'Copy', 'book'];
+let arr3 = ['pencile', 'Copy', 'book']
 
-console.log(getData(arr3));
+console.log(getData(arr3))
