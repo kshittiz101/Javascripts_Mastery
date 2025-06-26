@@ -1,4 +1,4 @@
-// console.log(document.head)
+console.log(document.head);
 // const header = document.getElementsByClassName('header')
 // header.innerHTML = 'Hello from header'
 // console.log(header)
@@ -17,11 +17,11 @@
 // const header = document.getElementById('header')
 // header.innerHTML = '<h1> This is hello from header </h1>'
 
-const h2 = document.querySelector('h2')
+const h2 = document.querySelector("h2");
 
-h2.addEventListener('click', () => {
-  h2.innerHTML = 'Now This will be change'
-  h2.style.backgroundColor = 'red'
-  h2.style.color = 'black'
-  console.log(h2)
-})
+h2.addEventListener("click", () => {
+  h2.innerHTML = "Now This will be change";
+  h2.style.backgroundColor = "red";
+  h2.style.color = "black";
+  console.log(h2);
+});
