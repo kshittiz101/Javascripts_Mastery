@@ -14,4 +14,14 @@
 let h2 = document.querySelector("h2");
 console.log(h2);
 
+// chaning html
+h2.innerHTML = "This heading is change from js using Dom";
+
 // changing css
+h2.style.backgroundColor = "green";
+
+// add event listeners
+h2.addEventListener("click", function () {
+  h2.style.backgroundColor = "red";
+  h2.style.color = "white";
+});
