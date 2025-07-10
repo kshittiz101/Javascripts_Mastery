@@ -18,3 +18,22 @@ box.addEventListener("mouseleave", function () {
   console.log("mouse leave");
   box.style.backgroundColor = "red";
 });
+
+box.addEventListener("mouseover", function () {
+  console.log("mouse over");
+  box.style.backgroundColor = "green";
+});
+
+box.addEventListener("mouseout", function () {
+  console.log("mouse out");
+  box.style.backgroundColor = "red";
+});
+
+box.addEventListener("mousemove", function () {
+  console.log("mouse move");
+  box.style.backgroundColor = "red";
+});
+
+box.addEventListener("keyup", function () {
+  console.log("Key pressed");
+});
