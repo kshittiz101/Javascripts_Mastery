@@ -1,5 +1,5 @@
 // js is single threaded, event driven driven programming language
-// sync programming
+// js is by default sync in nature
 // in sync programming the code will execute line by line, the task must finished move to next steps
 
 console.log("Start");
