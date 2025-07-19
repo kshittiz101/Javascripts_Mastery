@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <h3>Add Your Todo Here</h3>
+      <div id="input-content">
+        <input
+          type="text"
+          class="custom-input"
+          placeholder="Enter your todo..."
+        />
+        <button class="custom-btn" id="add-btn" type="button">
+          <span class="add-btn">Add Todo</span>
+          <i class="ri-add-line"></i>
+        </button>
+      </div>
+
+      <!-- todo container -->
+      <div class="todo-container">
+        <div class="todo">
+          <p class="todo-task-text">This is first task</p>
+          <div class="todo-btn-container">
+            <button class="custom-btn" type="button">
+              <span class="delete-btn">Delete </span>
+              <i class="ri-delete-bin-line"></i>
+            </button>
+            <button class="custom-btn" type="button">
+              <span class="update-btn">Edit</span>
+              <i class="ri-pencil-line"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts links  -->
+    <script src="app.js"></script>
+  </body>
+</html>

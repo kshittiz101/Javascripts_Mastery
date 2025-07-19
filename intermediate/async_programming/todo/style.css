@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 35vw;
+  min-height: 200px;
+  background-color: rebeccapurple;
+  color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.main:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25), 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+#input-content {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.custom-input {
+  flex: 3;
+  font-size: 1rem;
+  padding: 0.6rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.custom-btn {
+  flex: 1;
+  font-size: 1rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid black;
+  background-color: green;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.add-btn,
+.delete-btn,
+.update-btn {
+  background-color: transparent;
+  border: none;
+
+  font-size: inherit;
+  pointer-events: none;
+}
+
+.todo-container .todo {
+  background-color: rgb(5, 63, 5);
+  padding: 0.8rem 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todo-task-text {
+  font-size: 1rem;
+}
+.todo-btn-container {
+  display: flex;
+  gap: 0.5rem;
+}
