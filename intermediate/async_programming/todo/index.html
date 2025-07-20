@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo</title>
+    <title>Todo App</title>
 
     <link rel="stylesheet" href="style.css" />
 
@@ -14,39 +14,45 @@
     />
   </head>
   <body>
-    <div class="main">
-      <h3>Add Your Todo Here</h3>
+    <main class="main">
+      <h3>Add Your Todo</h3>
+
+      <!-- Input Area -->
       <div id="input-content">
         <input
           type="text"
           class="custom-input"
           placeholder="Enter your todo..."
+          aria-label="Todo input"
         />
-        <button class="custom-btn" id="add-btn" type="button">
-          <span class="add-btn">Add Todo</span>
-          <i class="ri-add-line"></i>
+        <button
+          id="add-btn"
+          class="custom-btn"
+          type="button"
+          aria-label="Add todo"
+        >
+          Add Todo <i class="ri-add-line"></i>
         </button>
       </div>
 
-      <!-- todo container -->
-      <div class="todo-container">
+      <!-- Todo Container -->
+      <div class="todo-container" id="todo-container">
+        <!-- Static Todo Task -->
         <div class="todo">
-          <p class="todo-task-text">This is first task</p>
+          <p class="todo-task-text">Learn JavaScript Basics</p>
           <div class="todo-btn-container">
-            <button class="custom-btn" type="button">
-              <span class="delete-btn">Delete </span>
-              <i class="ri-delete-bin-line"></i>
+            <button class="custom-btn" type="button" aria-label="Delete task">
+              Delete <i class="ri-delete-bin-line"></i>
             </button>
-            <button class="custom-btn" type="button">
-              <span class="update-btn">Edit</span>
-              <i class="ri-pencil-line"></i>
+            <button class="custom-btn" type="button" aria-label="Edit task">
+              Edit <i class="ri-pencil-line"></i>
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
-    <!-- scripts links  -->
+    <!-- JavaScript -->
     <script src="app.js"></script>
   </body>
 </html>
