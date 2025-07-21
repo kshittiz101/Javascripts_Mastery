@@ -1,49 +1,63 @@
-// Select elements
+let addBtn = document.getElementById("add-btn");
 let input = document.querySelector(".custom-input");
-let addBtn = document.querySelector("#add-btn");
-const todoContainer = document.querySelector("#todo-container");
+let todoContainer = document.querySelector("#todo-container");
 
-const APIURL = "https://687b030babb83744b7ee8555.mockapi.io/api/v1/todos";
+// api url
+let apiUrl = "https://687b030babb83744b7ee8555.mockapi.io/api/v1/todos";
 
-// Add Button Event
-addBtn.addEventListener("click", function () {
-  let newTodo = input.value.trim();
-  if (!newTodo) return;
+// post task
+addBtn.addEventListener("click", postData);
 
-  console.log("Task is added:", newTodo);
-  input.value = "";
-  // Optionally: Add logic to POST newTodo to API here
-});
-
-// Fetch and render data
+// fetching all datas
 async function fetchData() {
-  try {
-    let response = await fetch(APIURL);
-    let data = await response.json();
+  let response = await fetch(apiUrl);
+  let data = await response.json();
+  console.log(data);
 
-    console.log("Fetched Todos:", data);
-
-    data.forEach((obj) => {
-      const div = document.createElement("div");
-      div.className = "todo";
-
-      div.innerHTML = `
-        <p class="todo-task-text">${obj.task}</p>
-        <div class="todo-btn-container">
-          <button class="custom-btn" type="button" aria-label="Delete task">
-            Delete <i class="ri-delete-bin-line"></i>
-          </button>
-          <button class="custom-btn" type="button" aria-label="Edit task">
-            Edit <i class="ri-pencil-line"></i>
-          </button>
-        </div>
-      `;
-
-      todoContainer.appendChild(div);
-    });
-  } catch (error) {
-    console.error("Error fetching todos:", error);
-  }
+  data.forEach((obj) => {
+    let div = document.createElement("div");
+    div.className = "todo";
+    div.innerHTML = `
+    <p>${obj.task}</p>
+  <div class="todo-btn-container">
+            <button class="custom-btn" type="button" aria-label="Delete task">
+              Delete <i class="ri-delete-bin-line"></i>
+            </button>
+            <button class="custom-btn" type="button" aria-label="Edit task">
+              Edit <i class="ri-pencil-line"></i>
+            </button>
+          </div>`;
+    console.log(div);
+    todoContainer.append(div);
+  });
 }
 
-fetchData();
+async function postData() {
+  let newTodo = input.value.trim();
+  // this prevent from empty submissions
+  if (!newTodo) return;
+
+  console.log(newTodo);
+
+  let objData = {
+    task: newTodo,
+  };
+  console.log(objData);
+
+  // post in api url
+  let response = await fetch(apiUrl, {
+    method: "POST",
+    header: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(objData),
+  });
+
+  if (response.ok) {
+    // reset value after submission
+    input.value = "";
+    fetchData();
+  } else {
+    console.error("Failed to get data", response.StatusText);
+  }
+}
