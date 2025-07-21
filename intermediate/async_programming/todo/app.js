@@ -32,6 +32,7 @@ async function fetchData() {
   });
 }
 
+// post new Task in api
 async function postData() {
   let newTodo = input.value.trim();
   // this prevent from empty submissions
