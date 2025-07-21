@@ -16,25 +16,23 @@ body {
 }
 
 .main {
-  width: 35vw;
-  min-height: 200px;
+  width: 65%;
+  height: 75vh;
   background-color: rebeccapurple;
   color: white;
   padding: 2rem 1.5rem;
   border-radius: 12px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.main:hover {
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25), 0 6px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 #input-content {
-  margin-top: 1rem;
   display: flex;
   gap: 1rem;
   width: 100%;
+  z-index: 1;
 }
 
 .custom-input {
@@ -77,6 +75,12 @@ body {
   pointer-events: none;
 }
 
+.todo-container {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 4px; /* optional scrollbar space */
+}
+
 .todo-container .todo {
   background-color: rgb(5, 63, 5);
   padding: 0.8rem 0.5rem;
@@ -86,9 +90,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .todo-task-text {
   font-size: 1rem;
 }
+
 .todo-btn-container {
   display: flex;
   gap: 0.5rem;
