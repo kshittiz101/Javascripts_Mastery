@@ -9,12 +9,14 @@ function greeting(greet, name, age) {
   console.log(`${greet}, i am ${name} and i am ${age} year old`);
 }
 
-const timeId = setTimeout(greeting, 5000, 'hi', 'kshittiz', 28);
+const timeId = setTimeout(greeting, 5000, "hi", "kshittiz", 28);
 console.log(timeId);
 
 setTimeout(
   () => {
-    console.log(`clear setTimeout having id ${timeId}, using clearTimeout function`);
+    console.log(
+      `clear setTimeout having id ${timeId}, using clearTimeout function`
+    );
   },
   3000,
   timeId

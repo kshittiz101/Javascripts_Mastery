@@ -48,7 +48,7 @@ async function postData() {
   // post in api url
   let response = await fetch(apiUrl, {
     method: "POST",
-    header: {
+    headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(objData),
