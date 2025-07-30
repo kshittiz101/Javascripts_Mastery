@@ -12,19 +12,17 @@
 // - `delay`: Time in milliseconds to wait before executing the callback.
 // - `...args` (optional): Arguments to pass to the callback function.
 
-// Example 1: Named Function as Callback
-function hello() {
-  console.log("Hello from 2 sec");
+// example:1
+function demo() {
+  console.log(
+    "setimeout is js inbuilt method, which is async in nature, it executes code after specified time delayed"
+  );
 }
-setTimeout(hello, 2000);
-// Syntax: setTimeout(callbackFunction, delayInMilliseconds)
+// setTimeout(callbacksFunctions, timeInmilliseconds(delay))
+setTimeout(demo, 2000);
 
-// Example 2: Arrow Function as Callback
+// example:2
+// using arrow function
 setTimeout(() => {
-  console.log("Using arrow function: setTimeout after 3 sec");
+  console.log("this is flat arrow function example in setTimeout");
 }, 3000);
-
-// Example 3: Anonymous Function as Callback
-setTimeout(function () {
-  console.log("Using anonymous function: setTimeout after 4 sec");
-}, 4000);

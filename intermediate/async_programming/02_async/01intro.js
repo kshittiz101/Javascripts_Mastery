@@ -1,8 +1,7 @@
-// js is single threaded, event driven driven programming language
-// js is by default sync in nature
-// in sync programming the code will execute line by line, the task must finished move to next steps
-// js is single threaded, synchronous and interpreter language
-//Synchronous Code runs line by line. Each operation must complete before the next one starts.
+// JavaScript is a single-threaded, event-driven, and interpreted programming language.
+// By default, JavaScript follows a synchronous execution model.
+// In synchronous programming, code executes line by line, and each task must finish before the next starts.
+// Synchronous code blocks further execution until the current operation completes.
 
 // asynchronous programming is used to handle tasks that take time to complete
 // it allows the program to continue running while waiting for the task to complete
