@@ -1,28 +1,33 @@
-function introduce(greeting, name, age) {
-  console.log(`${greeting}, my name is ${name} and I am ${age} years old.`);
+// Example 1: setTimeout using parameters
+function greeting(personName) {
+  console.log(`Good evening ${personName}`);
 }
 
-// Passing multiple arguments after the delay
-setTimeout(introduce, 2000, "Hello", "Kshittiz", 25);
+setTimeout(greeting, 1000, "Kshittiz");
 
-// Arrow function with multiple arguments
-setTimeout(
-  (greeting, name, age) => {
-    console.log(`${greeting} from async arrow! I'm ${name}, ${age} years old.`);
-  },
-  3000,
-  "Hi",
-  "KC",
-  26
-);
+// Example 2:  multiple parameters
 
-// Anonymous function with multiple arguments
+let stuName = "harry Potter";
+let age = 22;
+let schoolName = "Harvard Boarding School";
+
+function introduction(stuName, age, schoolName) {
+  console.log(
+    `Hello my name is ${stuName}, i am ${age} years old, my school name is ${schoolName}`
+  );
+}
+
+setTimeout(introduction, 1500, stuName, age, schoolName);
+
+// Example 3: Arrow function
 setTimeout(
-  function (greeting, name, age) {
-    console.log(`${greeting} from anonymous! Name: ${name}, Age: ${age}`);
+  (stuName, age, schoolName) => {
+    console.log(
+      `This is from arrow function, Student Name: ${stuName}, Student Age: ${age}, School Name: ${schoolName}`
+    );
   },
-  4000,
-  "Hey",
-  "Kshittiz",
-  27
+  2000,
+  stuName,
+  age,
+  schoolName
 );
