@@ -7,8 +7,17 @@ async function fetchUsers() {
   let response = await fetch(URL);
 
   // Wait for the response to be converted to JSON and print it in the console
-  console.log(await response.json());
+  console.log("Fetching users data: ", await response.json());
 }
 
 // Call the function to fetch and log the users
-fetchUsers();
+// fetchUsers();
+
+let POSTSURL = "https://jsonplaceholder.typicode.com/posts";
+
+async function fetchPosts() {
+  let response = await fetch(POSTSURL);
+  console.log(await response.json());
+}
+
+fetchPosts();
